@@ -3,47 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Vitrine</title>
+    <title>Mon Site Vitrine - Biodiversité</title>
     <style>
+        /* Style général */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f8f9fa;
+            background: #f0f8f0; /* Couleur de fond douce, écolo */
             color: #333;
         }
         header {
-            background: linear-gradient(135deg, #0073e6, #005bb5);
+            background: linear-gradient(135deg, #007a3d, #4e9f75); /* Vert naturel */
             color: white;
-            padding: 40px;
+            padding: 50px;
             text-align: center;
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #005bb5;
-            padding: 10px 0;
+            background: #4e9f75; /* Vert plus sombre */
+            padding: 12px 0;
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 15px 20px;
+            padding: 12px 20px;
             font-size: 18px;
             transition: 0.3s;
         }
         nav a:hover {
-            background: #003f80;
+            background: #3d7d59; /* Effet au survol */
             border-radius: 5px;
         }
         .container {
-            max-width: 1100px;
-            margin: 20px auto;
+            max-width: 1200px;
+            margin: 40px auto;
             background: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
             text-align: center;
         }
         .gallery {
@@ -55,35 +56,74 @@
         .gallery img {
             width: 100%;
             border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .image-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .image-card:hover .image-overlay {
+            opacity: 1;
+        }
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 10px;
+            text-align: center;
         }
         footer {
             text-align: center;
-            padding: 15px;
-            background: #0073e6;
+            padding: 20px;
+            background: #007a3d;
             color: white;
-            margin-top: 20px;
+            margin-top: 40px;
             font-size: 16px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur Mon Site</h1>
+        <h1>Bienvenue sur notre site dédié à la Biodiversité</h1>
     </header>
     <nav>
         <a href="#">Accueil</a>
         <a href="#">À Propos</a>
-        <a href="#">Blog</a>
+        <a href="#">Galerie</a>
         <a href="#">Contact</a>
     </nav>
     <div class="container">
-        <h2>Bienvenue</h2>
-        <p>Découvrez notre site moderne avec une galerie de photos et un design élégant.</p>
+        <h2>Découvrez notre monde naturel</h2>
+        <p>Chaque image ci-dessous représente un aspect unique de la biodiversité et de la faune de notre planète.</p>
         <div class="gallery">
-            <img src="images/IMG_3876.JPG" alt="Lezard vert">
-            <img src="images/IMG_3899 (2).JPG" alt="Vautour fauve">
-            <img src="images/IMG_9928.JPG" alt="Flamant rose">
+            <div class="image-card">
+                <img src="images/IMG_3876.JPG" alt="Lezard vert">
+                <div class="image-overlay">
+                    <p>Le Lézard Vert - Un symbole de la biodiversité méditerranéenne.</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="images/IMG_3899 (2).JPG" alt="Vautour fauve">
+                <div class="image-overlay">
+                    <p>Le Vautour Fauve - Un prédateur essentiel pour l'équilibre écologique.</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="images/IMG_9928.JPG" alt="Flamant rose">
+                <div class="image-overlay">
+                    <p>Le Flamant Rose - L'élégance des zones humides et des lagunes.</p>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
