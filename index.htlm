@@ -6,44 +6,64 @@
     <title>Mon Site Vitrine</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
+            background: #f8f9fa;
             color: #333;
         }
         header {
-            background: #0073e6;
+            background: linear-gradient(135deg, #0073e6, #005bb5);
             color: white;
-            padding: 15px;
+            padding: 40px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
         nav {
             display: flex;
             justify-content: center;
             background: #005bb5;
+            padding: 10px 0;
         }
         nav a {
             color: white;
             text-decoration: none;
             padding: 15px 20px;
+            font-size: 18px;
+            transition: 0.3s;
         }
         nav a:hover {
             background: #003f80;
+            border-radius: 5px;
         }
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 20px auto;
             background: white;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background: #0073e6;
             color: white;
             margin-top: 20px;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -59,7 +79,12 @@
     </nav>
     <div class="container">
         <h2>Bienvenue</h2>
-        <p>Ceci est un site vitrine simple hébergé sur GitHub Pages.</p>
+        <p>Découvrez notre site moderne avec une galerie de photos et un design élégant.</p>
+        <div class="gallery">
+            <img src="https://source.unsplash.com/400x300/?nature" alt="Nature">
+            <img src="https://source.unsplash.com/400x300/?city" alt="Ville">
+            <img src="https://source.unsplash.com/400x300/?technology" alt="Technologie">
+        </div>
     </div>
     <footer>
         &copy; 2025 Mon Site - Tous droits réservés.
