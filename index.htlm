@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Vitrine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #005bb5;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+        nav a:hover {
+            background: #003f80;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #0073e6;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Mon Site</h1>
+    </header>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">À Propos</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Bienvenue</h2>
+        <p>Ceci est un site vitrine simple hébergé sur GitHub Pages.</p>
+    </div>
+    <footer>
+        &copy; 2025 Mon Site - Tous droits réservés.
+    </footer>
+</body>
+</html>
