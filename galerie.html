@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Mon Site Vitrine</title>
+    <style>
+        /* Style général similaire à l'index.html */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #3d2c2e; /* Brun noisette */
+            color: #d8c3a5; /* Beige sable */
+        }
+        header {
+            background: linear-gradient(135deg, #748c69, #f4a261); /* Vert mousse et ocre doré */
+            color: white;
+            padding: 50px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #748c69; /* Vert mousse */
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background: #d8c3a5; /* Beige sable */
+            color: #3d2c2e; /* Texte brun noisette */
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            background: #d8c3a5; /* Beige sable */
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+            color: #3d2c2e; /* Texte brun noisette */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .image-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .image-card:hover .image-overlay {
+            opacity: 1;
+        }
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #748c69; /* Vert mousse */
+            color: white;
+            margin-top: 40px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galerie - Mon Site Vitrine</h1>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="#">À Propos</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Galerie d'images supplémentaires</h2>
+        <div class="gallery">
+            <div class="image-card">
+                <img src="images/IMG_0927.JPG" alt="Coucher de soleil">
+                <div class="image-overlay">
+                    <p>ENR et biodiversité.</p>
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="images/IMG_1363.JPG" alt="Parc éolien">
+                <div class="image-overlay">
+                    <p>Montagnes et parc éolien.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Mon Site - Tous droits réservés.
+    </footer>
+</body>
+</html>
