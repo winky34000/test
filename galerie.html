@@ -10,21 +10,32 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: #3d2c2e; /* Brun noisette */
-            color: #d8c3a5; /* Beige sable */
+            background: #f6f4eb; /* Beige clair dominant */
+            color: #2e3d2b; /* Vert sapin foncé */
         }
         header {
-            background: linear-gradient(135deg, #748c69, #f4a261); /* Vert mousse et ocre doré */
-            color: white;
+            background: #f6f4eb; /* Beige clair */
+            color: #2e3d2b; /* Texte vert sapin foncé */
             padding: 50px;
             text-align: center;
             font-size: 32px;
             font-weight: bold;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 10px;
+            background: #d4a373; /* Bande ocre doré */
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #748c69; /* Vert mousse */
+            background: #8b8663; /* Vert kaki chaud */
             padding: 15px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
@@ -37,23 +48,23 @@
             transition: background 0.3s, color 0.3s;
         }
         nav a:hover {
-            background: #d8c3a5; /* Beige sable */
-            color: #3d2c2e; /* Texte brun noisette */
+            background: #d4a373; /* Ocre doré */
+            color: #2e3d2b; /* Vert sapin foncé */
             border-radius: 5px;
         }
         .container {
             max-width: 1200px;
             margin: 40px auto;
-            background: #d8c3a5; /* Beige sable */
+            background: #f6f4eb; /* Beige clair */
             padding: 30px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
             text-align: center;
-            color: #3d2c2e; /* Texte brun noisette */
+            color: #2e3d2b; /* Texte vert sapin foncé */
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Images côte à côte */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             padding: 20px;
         }
@@ -93,7 +104,7 @@
         footer {
             text-align: center;
             padding: 20px;
-            background: #748c69; /* Vert mousse */
+            background: #2e3d2b; /* Vert sapin foncé */
             color: white;
             margin-top: 40px;
             font-size: 18px;
@@ -106,8 +117,8 @@
     </header>
     <nav>
         <a href="index.html">Accueil</a>
-        <a href="galerie.html">Galerie</a>
         <a href="#">À Propos</a>
+        <a href="galerie.html">Galerie</a>
         <a href="#">Contact</a>
     </nav>
     <div class="container">
